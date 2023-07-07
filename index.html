@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" onclick="scrollToSection('home')">Home</a>
+        <a href="#" onclick="scrollToSection('projects')">Projects</a>
+        <a href="#" onclick="scrollToSection('achievements')">Achievements</a>
+        <a href="#" onclick="scrollToSection('skills')">Skills</a>
+        <a href="#" onclick="scrollToSection('contact')">Contact</a>
+    </div>
+
+    <div id="home" class="section">
+        <h2>Hi ! I am Shahana </h2>
+        <div class="profile">
+            <img src="./images/img.jpg" alt="My Photo">
+            <div>
+                <h3>Full stack developer</h3>
+            </div>
+
+        </div>
+        <div>
+            <p>
+                I'm a college student that is completely<br>
+                entrenched in the full stack development.<br>
+                eagerly seeking opportunities to expand <br>
+                my knowledge.
+
+            </p>
+        </div>
+    </div>
+
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>Recipe Website</h3>
+            <p>CookEase is a dynamic website where food enthusiasts can
+                add, share, and rate recipes. With a helpful chatbot,
+                users can explore a variety of dishes and receive cooking assistance.
+            </p>
+        </div>
+    </div>
+
+    <div id="achievements" class="section">
+        <h2>Achievements</h2>
+        <div class="card">
+            <h3>X-ecutors ramanujan 2021 - sece</h3>
+            <p> 2nd prize</p>
+        </div>
+        <div class="card">
+            <h3>Academic topper </h3>
+            <p>2nd rank in CSE dept.
+            </p>
+        </div>
+    </div>
+
+    <div id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="card">
+            <h3>Python</h3>
+            <div class="progress">
+                <div class="progress-bar" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="card">
+            <h3>MERN</h3>
+            <div class="progress">
+                <div class="progress-bar" style="width: 30%;"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="ratings" class="section">
+        <h2>Online coding platforms</h2>
+        <div class="card">
+            <a href="https://leetcode.com/Shahana_S/" target="_blank">
+                <h3>LeetCode </h3>
+            </a>
+            <p>Rating: 1469</p>
+        </div>
+        
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="card">
+            <h3>Contact Information</h3>
+            <a>
+                <p>Email: shahana.s2021csec@sece.ac.in/p>
+            </a>
+            <p>Phone : 8072215934</p>
+            <a href="https://github.com/Shahana20" target="_blank">
+                <p>Github</p>
+            </a>
+            <a href="https://shorturl.at/iuzBR" target="_blank">
+                <p>LinkedIn</p>
+            </a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
